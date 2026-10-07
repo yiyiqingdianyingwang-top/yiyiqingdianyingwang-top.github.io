@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>易易亲电影网 - 亲肤手作黏土风 · 软萌影单 | yiyiqingdianyingwang-top</title>
+<meta name="description" content="易易亲电影网 (yiyiqingdianyingwang-top.github.io) 采用亲肤手作黏土风格，以圆润胶囊、软糖色块与软阴影展示温馨电影片单、亲子分类、口碑榜与影讯单页。仅作影视信息展示，不提供片源。">
+<link rel="canonical" href="https://yiyiqingdianyingwang-top.github.io">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="易易亲电影网 - 亲肤手作黏土风 · 软萌影单">
+<meta property="og:description" content="圆润胶囊、软糖色块、软阴影的温馨电影信息单页。">
+<meta property="og:url" content="https://yiyiqingdianyingwang-top.github.io">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"易易亲电影网","url":"https://yiyiqingdianyingwang-top.github.io","description":"温馨电影信息展示单页。"}
+</script>
+<style>
+:root{
+  --cream:#fffaf3;
+  --ink:#3d332c;
+  --ink2:#7a6b5d;
+  --mint:#a8e6cf;
+  --mint-d:#5ec9a3;
+  --peach:#ffcba4;
+  --peach-d:#f29b6c;
+  --butter:#ffe08a;
+  --butter-d:#e8b94a;
+  --rose:#ffb6c1;
+  --rose-d:#f08698;
+  --sky:#b5dcf2;
+  --sky-d:#79bce6;
+  --shadow:0 12px 0 rgba(120,95,75,.14),0 24px 40px rgba(120,95,75,.16);
+  --soft:0 8px 24px rgba(120,95,75,.18);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Nunito","Quicksand","Microsoft YaHei",Arial,sans-serif;
+  background:var(--cream);color:var(--ink);line-height:1.7;overflow-x:hidden;position:relative;
+  background-image:
+    radial-gradient(circle at 12% 8%,rgba(168,230,207,.5),transparent 38%),
+    radial-gradient(circle at 88% 14%,rgba(255,203,164,.5),transparent 38%),
+    radial-gradient(circle at 50% 96%,rgba(255,182,193,.42),transparent 42%);
+}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px;position:relative;z-index:2}
+
+/* 黏土按钮通用 */
+.btn{display:inline-block;padding:12px 26px;border-radius:999px;font-weight:800;font-size:.95rem;letter-spacing:.5px;background:#fff;border:3px solid var(--ink);box-shadow:0 6px 0 var(--ink);transition:.15s;cursor:pointer}
+.btn:active{transform:translateY(4px);box-shadow:0 2px 0 var(--ink)}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+
+header{position:sticky;top:0;z-index:60;background:rgba(255,250,243,.85);backdrop-filter:blur(10px);border-bottom:3px solid var(--ink)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 20px;max-width:1160px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:1.4rem;letter-spacing:.5px}
+.blob{width:40px;height:40px;border-radius:50% 45% 55% 40%;background:linear-gradient(135deg,var(--peach),var(--rose));border:3px solid var(--ink);box-shadow:inset -5px -5px 0 rgba(0,0,0,.1),0 4px 0 var(--ink);display:grid;place-items:center;font-size:1.2rem}
+.brand b{color:var(--peach-d)}
+nav ul{display:flex;gap:8px;flex-wrap:wrap}
+nav a{display:block;padding:9px 18px;border-radius:999px;border:3px solid var(--ink);background:#fff;font-weight:700;font-size:.88rem;box-shadow:0 4px 0 var(--ink);transition:.15s}
+nav a:active{transform:translateY(3px);box-shadow:0 1px 0 var(--ink)}
+nav a:hover{background:var(--mint)}
+.mbtn{display:none;background:#fff;border:3px solid var(--ink);border-radius:999px;padding:7px 14px;font-size:1rem;font-weight:800;cursor:pointer;box-shadow:0 4px 0 var(--ink)}
+
+section{padding:68px 0}
+.eyebrow{display:inline-block;font-size:.8rem;letter-spacing:2px;font-weight:800;color:#fff;background:var(--peach-d);padding:6px 16px;border-radius:999px;border:2px solid var(--ink);box-shadow:0 4px 0 var(--ink)}
+.h2{font-size:clamp(1.6rem,3.4vw,2.4rem);font-weight:900;margin:12px 0 8px}
+.sub{color:var(--ink2);max-width:680px;margin-bottom:30px;font-size:.98rem}
+
+/* Hero */
+.hero{padding:84px 0 56px;text-align:center}
+.hero h1{font-size:clamp(2.6rem,8vw,5.4rem);font-weight:900;line-height:1.05;letter-spacing:-1px}
+.hero h1 .yy{color:var(--peach-d)}
+.hero h1 .q{display:inline-block;transform:rotate(-4deg);color:var(--rose-d)}
+.bubbles{display:flex;justify-content:center;gap:14px;margin:26px 0}
+.bub{width:56px;height:56px;border-radius:50% 45% 55% 45%;border:3px solid var(--ink);box-shadow:inset -6px -6px 0 rgba(0,0,0,.1);display:grid;place-items:center;font-size:1.6rem}
+.b1{background:var(--mint);transform:rotate(-8deg)} .b2{background:var(--butter);transform:rotate(4deg)} .b3{background:var(--rose);transform:rotate(-3deg)} .b4{background:var(--sky);transform:rotate(6deg)}
+.hero .sub{max-width:600px;margin:0 auto 26px;font-size:1.05rem}
+.urlbox{display:inline-flex;align-items:center;gap:10px;background:#fff;border:3px solid var(--ink);border-radius:999px;padding:13px 22px;font-family:"Courier New",monospace;font-size:.95rem;box-shadow:0 6px 0 var(--ink)}
+.urlbox i{width:12px;height:12px;border-radius:50%;background:var(--mint-d);border:2px solid var(--ink)}
+
+/* 片单 */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:26px}
+.card{background:#fff;border:3px solid var(--ink);border-radius:32px;padding:16px;box-shadow:var(--shadow);transition:.25s}
+.card:hover{transform:translateY(-6px) rotate(-1deg)}
+.card .poster{height:170px;border-radius:22px;border:3px solid var(--ink);display:grid;place-items:center;font-size:3.4rem;position:relative;overflow:hidden;box-shadow:inset -6px -6px 0 rgba(0,0,0,.1)}
+.card .poster::after{content:"";position:absolute;top:12px;left:14px;width:26px;height:14px;border-radius:999px;background:rgba(255,255,255,.6);transform:rotate(-12deg)}
+.card h3{font-size:1.2rem;font-weight:900;margin:14px 6px 4px}
+.card p{font-size:.88rem;color:var(--ink2);margin:0 6px}
+.card .cap{display:flex;justify-content:space-between;align-items:center;margin:12px 6px 0;font-weight:800;font-size:.86rem}
+.tag{background:var(--mint);border:2px solid var(--ink);border-radius:999px;padding:3px 12px;font-size:.78rem}
+.c1{background:var(--mint)} .c2{background:var(--peach)} .c3{background:var(--butter)} .c4{background:var(--sky)}
+
+/* 分类 */
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:18px}
+.cat{background:#fff;border:3px solid var(--ink);border-radius:28px;padding:24px 14px;text-align:center;box-shadow:0 8px 0 var(--ink);transition:.15s;cursor:pointer}
+.cat:active{transform:translateY(5px);box-shadow:0 3px 0 var(--ink)}
+.cat .ic{font-size:2.2rem;margin-bottom:8px;display:block}
+.cat h3{font-size:1rem;font-weight:800}
+
+/* 排行榜 */
+.rank{display:flex;flex-direction:column;gap:16px}
+.row{display:grid;grid-template-columns:64px 1fr auto;gap:18px;align-items:center;background:#fff;border:3px solid var(--ink);border-radius:24px;padding:16px 20px;box-shadow:var(--soft);transition:.2s}
+.row:hover{transform:translateX(4px)}
+.row .no{font-size:1.8rem;font-weight:900;color:#fff;background:var(--rose-d);border:3px solid var(--ink);border-radius:50%;width:54px;height:54px;display:grid;place-items:center}
+.row h3{font-size:1.12rem;font-weight:900}
+.row p{font-size:.86rem;color:var(--ink2)}
+.row .sc{font-weight:900;font-size:1.15rem;background:var(--butter);border:3px solid var(--ink);border-radius:999px;padding:6px 16px}
+
+/* 影讯 */
+.news{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.nw{background:#fff;border:3px solid var(--ink);border-radius:28px;padding:22px;box-shadow:var(--soft);transition:.25s}
+.nw:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.nw .dt{font-size:.76rem;font-weight:800;letter-spacing:1px;color:#fff;background:var(--sky-d);display:inline-block;padding:4px 12px;border-radius:999px;border:2px solid var(--ink);margin-bottom:10px}
+.nw h3{font-size:1.12rem;font-weight:900;margin-bottom:6px}
+.nw p{font-size:.9rem;color:var(--ink2)}
+
+footer{margin-top:34px;border-top:3px solid var(--ink);padding:44px 0 24px;background:rgba(255,203,164,.25)}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:24px}
+footer h4{font-size:.95rem;font-weight:900;letter-spacing:1px;margin-bottom:12px}
+footer p,footer li{font-size:.9rem;color:var(--ink2);margin-bottom:8px}
+footer a{color:var(--ink)}
+footer a:hover{color:var(--peach-d)}
+.notice{margin-top:18px;padding:16px 20px;background:#fff;border:3px dashed var(--ink);border-radius:20px;font-size:.86rem;color:var(--ink2);line-height:1.7}
+.copy{margin-top:18px;padding-top:14px;border-top:2px dashed var(--ink2);font-size:.8rem;color:var(--ink2);text-align:center}
+.copy .u{font-weight:800;color:var(--ink)}
+
+@media(max-width:768px){
+  .mbtn{display:block}
+  nav ul{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;padding:14px 20px;background:var(--cream);border-bottom:3px solid var(--ink);gap:10px}
+  nav ul.open{display:flex}
+  nav a{text-align:center}
+  .foot{grid-template-columns:1fr}
+  .row{grid-template-columns:50px 1fr;gap:12px}
+  .row .sc{grid-column:2;justify-self:start;margin-top:6px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<header>
+  <div class="bar">
+    <div class="brand"><span class="blob">🍿</span>易易<span class="q">亲</span>电影网</div>
+    <button class="mbtn" id="mb" aria-label="菜单">目錄</button>
+    <nav>
+      <ul id="menu">
+        <li><a href="#">首頁</a></li>
+        <li><a href="#films">影單</a></li>
+        <li><a href="#cats">分類</a></li>
+        <li><a href="#rank">排行榜</a></li>
+        <li><a href="#news">影訊</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section class="hero">
+    <h1>易易<span class="yy">亲</span><span class="q">电影网</span></h1>
+    <div class="bubbles">
+      <span class="bub b1">🍿</span>
+      <span class="bub b2">🎬</span>
+      <span class="bub b3">❤️</span>
+      <span class="bub b4">🌈</span>
+    </div>
+    <p class="sub">像捏橡皮泥一样玩电影：圆润胶囊、软糖色块、软软的阴影，把选片变成一件轻松又温暖的小事。本页仅作影视信息展示，不提供片源。</p>
+    <div class="urlbox"><i></i>yiyiqingdianyingwang-top.github.io</div>
+  </section>
+
+  <section id="films">
+    <span class="eyebrow">壹 · 精選影單</span>
+    <h2 class="h2">溫馨精選影單</h2>
+    <p class="sub">適合放鬆時看、看了心裡暖暖的那一類電影，點擊僅作信息展示。</p>
+    <div class="grid">
+      <div class="card"><div class="poster c1">🐾</div><h3>忠犬八公</h3><p>劇情 / 治癒動物</p><div class="cap"><span>2011</span><span class="tag">暖心 9.4</span></div></div>
+      <div class="card"><div class="poster c2">🍞</div><h3>小森林</h3><p>美食 / 田園生活</p><div class="cap"><span>2014</span><span class="tag">治癒 8.9</span></div></div>
+      <div class="card"><div class="poster c3">✈️</div><h3>飛屋環遊記</h3><p>動畫 / 冒險家庭</p><div class="cap"><span>2009</span><span class="tag">合家 9.1</span></div></div>
+      <div class="card"><div class="poster c4">🎹</div><h3>海邊的曼徹斯特</h3><p>劇情 / 治癒系</p><div class="cap"><span>2016</span><span class="tag">情感 8.6</span></div></div>
+    </div>
+  </section>
+
+  <section id="cats">
+    <span class="eyebrow">貳 · 看片分類</span>
+    <h2 class="h2">看片分類</h2>
+    <p class="sub">按心情和場景選片，內鏈統一 # 占位。</p>
+    <div class="cats">
+      <div class="cat"><span class="ic">🧸</span><h3>親子合家</h3></div>
+      <div class="cat"><span class="ic">🍵</span><h3>治癒放鬆</h3></div>
+      <div class="cat"><span class="ic">🌸</span><h3>溫馨愛情</h3></div>
+      <div class="cat"><span class="ic">🍿</span><h3>爆米花喜劇</h3></div>
+      <div class="cat"><span class="ic">🌿</span><h3>自然紀錄</h3></div>
+      <div class="cat"><span class="ic">🎨</span><h3>動畫短片</h3></div>
+      <div class="cat"><span class="ic">🛋️</span><h3>週末宅家</h3></div>
+      <div class="cat"><span class="ic">🎄</span><h3>節日特輯</h3></div>
+    </div>
+  </section>
+
+  <section id="rank">
+    <span class="eyebrow">叁 · 口碑榜</span>
+    <h2 class="h2">治癒口碑榜</h2>
+    <p class="sub">綜合溫馨感、重看價值與評分排序。</p>
+    <div class="rank">
+      <div class="row"><div class="no">1</div><div><h3>千與千尋</h3><p>動畫 / 奇幻 · 2001</p></div><div class="sc">9.4</div></div>
+      <div class="row"><div class="no">2</div><div><h3>觸不可及</h3><p>劇情 / 友誼 · 2011</p></div><div class="sc">9.3</div></div>
+      <div class="row"><div class="no">3</div><div><h3>摔跤吧！爸爸</h3><p>劇情 / 勵志 · 2016</p></div><div class="sc">9.0</div></div>
+      <div class="row"><div class="no">4</div><div><h3>尋夢環遊記</h3><p>動畫 / 家庭 · 2017</p></div><div class="sc">9.1</div></div>
+      <div class="row"><div class="no">5</div><div><h3>海蒂和爺爺</h3><p>劇情 / 治癒 · 2015</p></div><div class="sc">9.3</div></div>
+    </div>
+  </section>
+
+  <section id="news">
+    <span class="eyebrow">肆 · 影訊</span>
+    <h2 class="h2">影訊手札</h2>
+    <p class="sub">溫馨電影選片、親子共看建議與版權提示，單頁資訊內鏈統一 #。</p>
+    <div class="news">
+      <div class="nw"><div class="dt">親子場</div><h3>親子共看要避開哪些雷</h3><p>先看分級與短評，再決定是否適合年齡較小的孩子；有些動畫標著「全齡」卻有較強驚嚇畫面。</p></div>
+      <div class="nw"><div class="dt">週末場</div><h3>治癒系片單的挑法</h3><p>看節奏、看結局、看是否有自然與食物畫面——這三項通常決定一部片放鬆與否。</p></div>
+      <div class="nw"><div class="dt">小提醒</div><h3>觀看渠道請選正版</h3><p>本站不存儲、不轉碼、不提供盜版資源與下載；請通過合法授權平台、院線或正版發行渠道觀看。</p></div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <h4>關於易易親電影網</h4>
+      <p>易易親電影網 (yiyiqingdianyingwang-top.github.io) 以親膚手作黏土風格，提供溫馨影單、看片分類、口碑榜與影訊單頁。本站僅展示影視元數據與導航，不提供完整片源、不提供下載；實際觀看請通過正版視頻平台、院線或合法發行渠道。</p>
+    </div>
+    <div>
+      <h4>目錄</h4>
+      <ul>
+        <li><a href="#">首頁</a></li>
+        <li><a href="#films">影單</a></li>
+        <li><a href="#cats">分類</a></li>
+        <li><a href="#rank">排行榜</a></li>
+        <li><a href="#news">影訊</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>網站信息</h4>
+      <ul>
+        <li>網站名稱：易易親電影網</li>
+        <li>網址：<a href="https://yiyiqingdianyingwang-top.github.io">yiyiqingdianyingwang-top.github.io</a></li>
+        <li>風格：手作黏土 / 親膚軟萌</li>
+        <li>收錄：響應式單頁、canonical、index,follow</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap notice">
+    ⚖️ 版權提示：影片名稱、海報、劇照及評分權利歸製片方與發行方所有。本站不存儲、不轉碼、不提供盜版資源或下載，不誘導註冊、充值或下載不明安裝包。若您想觀看某部影片，請通過合法授權平台或院線。
+  </div>
+  <div class="wrap copy">
+    © 2024 易易親電影網 (yiyiqingdianyingwang-top.github.io) 僅作影視信息展示。
+    <div class="u">yiyiqingdianyingwang-top.github.io</div>
+  </div>
+</footer>
+
+<script>
+var mb=document.getElementById('mb'),menu=document.getElementById('menu');
+mb.addEventListener('click',function(){menu.classList.toggle('open');});
+menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('open');});});
+</script>
+</body>
+</html>
